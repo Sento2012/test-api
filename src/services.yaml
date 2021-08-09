@@ -1,0 +1,21 @@
+services:
+  Api\Components\DstManager:
+    class: Api\Components\DstManager
+    arguments:
+      - '@Api\Components\TimeConverter'
+      - '@Api\Repository\CityProvider'
+
+  Api\Components\TimeConverter:
+    class: Api\Components\TimeConverter
+
+  Api\Repository\CityProvider:
+    class: Api\Repository\CityProvider
+
+  Api\Components\SyncManager:
+    class: Api\Components\SyncManager
+    arguments:
+      - '@Api\Components\CityProvider'
+      - '@Api\Components\TimeZoneParser'
+
+  Api\Components\TimeZoneParser:
+    class: Api\Components\TimeZoneParser
