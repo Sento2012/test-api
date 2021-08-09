@@ -14,7 +14,7 @@ services:
   Api\Components\SyncManager:
     class: Api\Components\SyncManager
     arguments:
-      - '@Api\Components\CityProvider'
+      - '@Api\Repository\CityProvider'
       - '@Api\Components\TimeZoneParser'
 
   Api\Components\TimeZoneParser:

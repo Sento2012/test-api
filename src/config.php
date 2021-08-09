@@ -22,7 +22,7 @@ return [
     ],
     Enum::DATABASE_CONFIG => [
         Enum::DATABASE_CONFIG_DRIVER => 'mysql',
-        Enum::DATABASE_CONFIG_HOST => 'db-api',
+        Enum::DATABASE_CONFIG_HOST => 'db-test-api',
         Enum::DATABASE_CONFIG_DATABASE => 'root',
         Enum::DATABASE_CONFIG_USER => 'root',
         Enum::DATABASE_CONFIG_PASSWORD => 'root',

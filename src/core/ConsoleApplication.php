@@ -9,8 +9,8 @@ class ConsoleApplication extends BaseApplication
     public function run(): void
     {
         try {
-            $controllerName = $_SERVER['argv'][2];
-            $actionName = $_SERVER['argv'][3];
+            $controllerName = preg_replace('/\./isu', '\\', $_SERVER['argv'][1]);
+            $actionName = $_SERVER['argv'][2];
             if (class_exists($controllerName)) {
                 $controller = new $controllerName();
             } else {
