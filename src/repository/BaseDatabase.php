@@ -37,7 +37,7 @@ abstract class BaseDatabase
 
     public function updateRecord(array $params): bool
     {
-        return Capsule::table($this->getTable())
+        return (bool) Capsule::table($this->getTable())
             ->where('id', '=', $params['id'])
             ->update($params);
     }
