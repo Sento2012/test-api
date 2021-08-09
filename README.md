@@ -6,4 +6,4 @@
 
 Для обратного преобразования: `http://localhost:8000/dst/get-utc-time/746bdf1d-d154-46cd-b104-9415fcc39e35/123123213`
 
-Крон для обнлвления запускается раз в полночь командой `php index.php Api\Controllers\CliController`
+Крон для обнлвления запускается раз в полночь командой `php index.php Api.Controllers.CliController sync`
